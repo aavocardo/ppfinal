@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="done with tbales and parsing in DisplayTeamsDialog.java">
+    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="need to fix whitespace issue, add functionality to buttons, and figure out why table labels aren't conforming to alignment positions when adding buttons">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Frames/DisplayTeamsDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/DisplayTeamsDialog.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -52,7 +54,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.import",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -62,19 +64,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Project.Scratch.Example" />
-      <module name="finalProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Project.Scratch.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FileManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Project.Logic.FileManager" />
       <module name="finalProject" />
@@ -114,39 +103,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Project.Scratch.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Project.Scratch.Main" />
-      <module name="finalProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Project.Scratch.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scratch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Project.Scratch" />
-      <module name="finalProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Project.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.FileManager" />
+      <item itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.FileManager" />
-        <item itemvalue="Application.Scratch" />
-        <item itemvalue="Application.Project.Scratch.Main" />
-        <item itemvalue="Application.Example" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +127,8 @@
       <workItem from="1683928846242" duration="165000" />
       <workItem from="1683961320035" duration="3456000" />
       <workItem from="1683968869461" duration="27689000" />
-      <workItem from="1684046595193" duration="14351000" />
+      <workItem from="1684046595193" duration="14479000" />
+      <workItem from="1684089605285" duration="322000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1683968623480</created>
@@ -200,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684059857789</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="need to fix whitespace issue, add functionality to buttons, and figure out why table labels aren't conforming to alignment positions when adding buttons">
+      <created>1684061568526</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684061568526</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +184,8 @@
     <MESSAGE value="can read tables now" />
     <MESSAGE value="decent progress" />
     <MESSAGE value="done with tbales and parsing in DisplayTeamsDialog.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="done with tbales and parsing in DisplayTeamsDialog.java" />
+    <MESSAGE value="need to fix whitespace issue, add functionality to buttons, and figure out why table labels aren't conforming to alignment positions when adding buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="need to fix whitespace issue, add functionality to buttons, and figure out why table labels aren't conforming to alignment positions when adding buttons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

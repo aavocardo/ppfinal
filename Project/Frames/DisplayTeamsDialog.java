@@ -3,18 +3,21 @@ package Project.Frames;
 
 import Project.Logic.FileManager;
 
-import static Project.Logic.FileManager.parseTeamID;
-import static Project.Logic.FileManager.parseTeamName;
-import static Project.Logic.FileManager.parseLocation;
-import static Project.Logic.FileManager.parsePlayerID;
-import static Project.Logic.FileManager.parsePlayerName;
-import static Project.Logic.FileManager.parseSalary;
-
-import java.awt.*;
-
-import javax.swing.*;
+import javax.swing.BorderFactory;
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.JTableHeader;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+
+import static Project.Logic.FileManager.*;
 
 
 public class DisplayTeamsDialog extends JFrame {
