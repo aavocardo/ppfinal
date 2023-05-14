@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="decent progress">
+    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="done with tbales and parsing in DisplayTeamsDialog.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/Frames/DisplayTeamsDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/DisplayTeamsDialog.java" afterDir="false" />
     </list>
@@ -163,7 +163,7 @@
       <workItem from="1683928846242" duration="165000" />
       <workItem from="1683961320035" duration="3456000" />
       <workItem from="1683968869461" duration="27689000" />
-      <workItem from="1684046595193" duration="12463000" />
+      <workItem from="1684046595193" duration="14351000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1683968623480</created>
@@ -193,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684052353044</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="done with tbales and parsing in DisplayTeamsDialog.java">
+      <created>1684059857789</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684059857789</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +211,8 @@
     <MESSAGE value="m" />
     <MESSAGE value="can read tables now" />
     <MESSAGE value="decent progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="decent progress" />
+    <MESSAGE value="done with tbales and parsing in DisplayTeamsDialog.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="done with tbales and parsing in DisplayTeamsDialog.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

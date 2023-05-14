@@ -23,6 +23,7 @@ public class DisplayTeamsDialog extends JFrame {
     JPanel tablePanel, buttonPanel;
     JLabel teamLabel, footballerLabel;
     JScrollPane teamScrollPane, playerScrollPane;
+    JButton editTeam, addFootballer;
     DefaultTableCellRenderer centerRenderer;
     Color headerColor = new Color(204, 217, 255);
     Color tableColor = new Color(153, 179, 255);
@@ -34,8 +35,15 @@ public class DisplayTeamsDialog extends JFrame {
 
     protected JPanel buttonPanel() {
         buttonPanel = new JPanel();
+        buttonPanel.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
 
 
+        editTeam = new JButton("Edit Team");
+
+        addFootballer = new JButton("Add Footballer");
+
+        buttonPanel.add(editTeam);
+        buttonPanel.add(addFootballer);
 
         return buttonPanel;
     }
@@ -141,16 +149,17 @@ public class DisplayTeamsDialog extends JFrame {
         footballerLabel.setFont(labelFont);
         footballerLabel.setBorder(BorderFactory.createEmptyBorder(10, 0, 10, 0));
 
-
         playerScrollPane = new JScrollPane(footballerInformation);
         playerScrollPane.setPreferredSize(new Dimension(500, footballerInformation.getPreferredSize().height));
         playerScrollPane.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
 
         tablePanel.add(footballerLabel);
         tablePanel.add(playerScrollPane);
+        tablePanel.add(buttonPanel());
         tablePanel.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
 
         add(tablePanel);
-        setSize(600, 500);
+
+        setSize(550, 500);
     }
 }
