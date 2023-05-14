@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="can read tables now">
+    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="decent progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/Frames/DisplayTeamsDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/DisplayTeamsDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Frames/FootballerDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/AddFootballerDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Frames/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Frames/NewTeamDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/AddTeamDialog.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +163,7 @@
       <workItem from="1683928846242" duration="165000" />
       <workItem from="1683961320035" duration="3456000" />
       <workItem from="1683968869461" duration="27689000" />
-      <workItem from="1684046595193" duration="5072000" />
+      <workItem from="1684046595193" duration="12463000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1683968623480</created>
@@ -189,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684049930205</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="decent progress">
+      <created>1684052353044</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684052353044</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +203,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="m" />
     <MESSAGE value="can read tables now" />
-    <option name="LAST_COMMIT_MESSAGE" value="can read tables now" />
+    <MESSAGE value="decent progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="decent progress" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

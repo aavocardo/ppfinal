@@ -1,32 +1,46 @@
 package Project.Frames;
 
 
+import Project.Logic.FileManager;
+
 import static Project.Logic.FileManager.parseTeamID;
 import static Project.Logic.FileManager.parseTeamName;
 import static Project.Logic.FileManager.parseLocation;
 import static Project.Logic.FileManager.parsePlayerID;
 import static Project.Logic.FileManager.parsePlayerName;
 import static Project.Logic.FileManager.parseSalary;
-import Project.Logic.FileManager;
+
+import java.awt.*;
+
 import javax.swing.*;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.JTableHeader;
-import java.awt.*;
 
 
 public class DisplayTeamsDialog extends JFrame {
     JTable teamInformation, footballerInformation;
     JTableHeader teamHeader, footballerHeader;
-    JPanel tablePanel;
+    JPanel tablePanel, buttonPanel;
+    JLabel teamLabel, footballerLabel;
     JScrollPane teamScrollPane, playerScrollPane;
     DefaultTableCellRenderer centerRenderer;
     Color headerColor = new Color(204, 217, 255);
     Color tableColor = new Color(153, 179, 255);
     Font headerFont = new Font("San Francisco", Font.BOLD, 12);
     Font tableFont = new Font("San Francisco", Font.PLAIN, 12);
+    Font labelFont = new Font("San Francisco", Font.BOLD, 16);
     FileManager file = new FileManager("./Project/Data.xlsx");
     Object[] teamData, playerData;
-    public DisplayTeamsDialog(String name) {
+
+    protected JPanel buttonPanel() {
+        buttonPanel = new JPanel();
+
+
+
+        return buttonPanel;
+    }
+
+    protected DisplayTeamsDialog(String name) {
         tablePanel = new JPanel();
         tablePanel.setLayout(new BoxLayout(tablePanel, BoxLayout.Y_AXIS));
 
@@ -34,13 +48,24 @@ public class DisplayTeamsDialog extends JFrame {
         centerRenderer.setHorizontalAlignment(JLabel.CENTER);
 
         teamData = file.getRow("team_name", name);
-        String[] teamColumns = {"Team ID", "Team Name", "Location"};
         Object[][] teamTable = {{parseTeamID(teamData), parseTeamName(teamData), parseLocation(teamData)}};
+        String[] teamColumns = {"Team ID", "Team Name", "Location"};
 
-        teamInformation = new JTable(teamTable, teamColumns);
+        teamInformation = new JTable(teamTable, teamColumns) {
+            @Override
+            public boolean isCellEditable(int row, int column) {
+                return false;
+            }
+
+            @Override
+            public boolean isCellSelected(int row, int column) {
+                return false;
+            }
+        };
         teamInformation.setBackground(tableColor);
         teamInformation.setFont(tableFont);
-        teamInformation.setRowHeight(30);
+        teamInformation.setRowHeight(45);
+        teamInformation.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
 
         teamHeader = teamInformation.getTableHeader();
         teamHeader.setDefaultRenderer(new DefaultTableCellRenderer() {
@@ -64,12 +89,19 @@ public class DisplayTeamsDialog extends JFrame {
             teamInformation.getColumnModel().getColumn(i).setCellRenderer(centerRenderer);
         }
 
+        teamLabel = new JLabel("Team Information");
+        teamLabel.setFont(labelFont);
+        teamLabel.setBorder(BorderFactory.createEmptyBorder(10, 0, 10, 0));
+
         teamScrollPane = new JScrollPane(teamInformation);
+        teamScrollPane.setPreferredSize(new Dimension(500, 77));
+        teamScrollPane.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        tablePanel.add(teamLabel);
         tablePanel.add(teamScrollPane);
 
         playerData = file.getAllRows("team_name", name);
-        String[] footballerColumns = {"ID", "Name", "Salary"};
         Object[][] footballerTable = new Object[playerData.length][3];
+        String[] footballerColumns = {"ID", "Name", "Salary"};
 
         for (int i = 0; i < playerData.length; i++) {
             Object[] player = (Object[]) playerData[i];
@@ -81,7 +113,7 @@ public class DisplayTeamsDialog extends JFrame {
         footballerInformation = new JTable(footballerTable, footballerColumns);
         footballerInformation.setBackground(tableColor);
         footballerInformation.setFont(tableFont);
-        footballerInformation.setRowHeight(30);
+        footballerInformation.setRowHeight(25);
 
         footballerHeader = footballerInformation.getTableHeader();
         footballerHeader.setDefaultRenderer(new DefaultTableCellRenderer() {
@@ -105,11 +137,20 @@ public class DisplayTeamsDialog extends JFrame {
             footballerInformation.getColumnModel().getColumn(i).setCellRenderer(centerRenderer);
         }
 
+        footballerLabel = new JLabel("Player Information");
+        footballerLabel.setFont(labelFont);
+        footballerLabel.setBorder(BorderFactory.createEmptyBorder(10, 0, 10, 0));
+
+
         playerScrollPane = new JScrollPane(footballerInformation);
+        playerScrollPane.setPreferredSize(new Dimension(500, footballerInformation.getPreferredSize().height));
+        playerScrollPane.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
+
+        tablePanel.add(footballerLabel);
         tablePanel.add(playerScrollPane);
+        tablePanel.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
 
         add(tablePanel);
-        setSize(500, 600);
-        pack();
+        setSize(600, 500);
     }
 }
