@@ -17,7 +17,6 @@ public class FileManager {
     String path;
     FileInputStream file;
     XSSFWorkbook workbook;
-    XSSFSheet sheet;
 
     public FileManager(String path) {
         this.path = path;
@@ -45,31 +44,6 @@ public class FileManager {
 
     public static String parseSalary(Object[] cell) {
         return BigDecimal.valueOf((Double) cell[5]).toPlainString();
-    }
-
-    public void readFile() {
-        try {
-            file = new FileInputStream(this.path);
-            workbook = new XSSFWorkbook(file);
-
-            XSSFSheet sheet = workbook.getSheetAt(0);
-
-            for (Row row : sheet) {
-                Iterator<Cell> cellIterator = row.cellIterator();
-                while (cellIterator.hasNext()) {
-                    Cell cell = cellIterator.next();
-                    switch (cell.getCellTypeEnum()) {
-                        case NUMERIC -> System.out.print(cell.getNumericCellValue() + "\t");
-                        case STRING -> System.out.print(cell.getStringCellValue() + "\t");
-                    }
-                }
-                System.out.println();
-            }
-            file.close();
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 
     public Object[] getRow(String columnName, String searchValue) {
@@ -214,7 +188,12 @@ public class FileManager {
 
     public static void main(String[] args) {
         FileManager fm = new FileManager("./Project/Data.xlsx");
+
         List<String> teams = fm.getUniqueValues("location");
         System.out.println(teams);
+        System.out.println("LINE BREAK");
+
+        Object[] team = fm.getRow("team_name", "Broncos");
+        System.out.println(parseTeamName(team));
     }
 }

@@ -1,12 +1,14 @@
 package Project.Frames;
 
 import Project.Logic.FileManager;
-import java.util.ArrayList;
+
 import java.awt.Font;
 import java.awt.Dimension;
+import java.awt.Color;
+import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.GridBagLayout;
-import java.awt.BorderLayout;
+import java.util.ArrayList;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JFrame;
@@ -18,42 +20,48 @@ import javax.swing.BorderFactory;
 
 public class MainFrame extends JFrame {
     FileManager file = new FileManager("./Project/Data.xlsx");
-    JPanel dataPanel, buttonBox, buttonPanel, teamBox;
+    JPanel dataPanel, buttonBox, buttonPanel, teamPanel;
     JButton newTeam, editTeam, deleteTeam, titleButton;
+
     protected JPanel data() {
         dataPanel = new JPanel();
         dataPanel.setLayout(new BoxLayout(dataPanel, BoxLayout.Y_AXIS));
         dataPanel.setBorder(BorderFactory.createEmptyBorder(20, 50, 20, 50));
-
-        Dimension size = new Dimension(200, 50);
 
         ArrayList<String> teams = (ArrayList<String>) file.getUniqueValues("team_name");
         teams.remove(0);    // Remove column name (location)
 
         titleButton = new JButton("Teams");
         titleButton.setFont(new Font("San Francisco", Font.BOLD, 22));
-        titleButton.setPreferredSize(size);
-        titleButton.setBorder(BorderFactory.createEmptyBorder(0, 0, 10, 0));
+        titleButton.setPreferredSize(new Dimension(200, 50));
+        titleButton.setFocusable(false);
+        titleButton.setForeground(new Color(102, 153, 255));
 
-        teamBox = new JPanel(new GridLayout(teams.size() + 1, 1));
-        teamBox.add(titleButton);
+        teamPanel = new JPanel(new GridLayout(teams.size() + 1, 1));
+        teamPanel.add(titleButton);
 
         for (String team : teams) {
             JButton teamName = new JButton(team);
-            teamName.setPreferredSize(new Dimension(size));
+            teamName.setPreferredSize(new Dimension(200, 20));
+            teamName.setFocusable(true);
             teamName.addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
-                    String teamChoice = teamName.getText();
-                    DisplayTeamsDialog displayTeamsDialog = new DisplayTeamsDialog(teamChoice);
-                    displayTeamsDialog.setVisible(true);
-                    System.out.println(teamChoice);
+                    if (e.getClickCount() == 1) {
+                        String teamChoice = teamName.getText();
+                        teamName.requestFocusInWindow();
+                        System.out.println(teamChoice + " selected");
+                    } else if (e.getClickCount() == 2) {
+                        String teamChoice = teamName.getText();
+                        DisplayTeamsDialog displayTeamsDialog = new DisplayTeamsDialog(teamChoice);
+                        displayTeamsDialog.setVisible(true);
+                        System.out.println(teamChoice + " dialog opened");
+                    }
                 }
             });
-            teamBox.add(teamName);
-            dataPanel.add(teamBox);
+            teamPanel.add(teamName);
+            dataPanel.add(teamPanel);
         }
-
         return dataPanel;
     }
 
@@ -90,13 +98,12 @@ public class MainFrame extends JFrame {
 
     public MainFrame() {
         setTitle("Football Team Manager");
-        setSize(700, 600);
-        setResizable(true);
+        setSize(500, 450);
+        setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setBackground(new Color(194, 214, 214));
 
         getContentPane().add(data(), BorderLayout.CENTER);
         getContentPane().add(buttons(), BorderLayout.EAST);
-
-        pack();
     }
 }
