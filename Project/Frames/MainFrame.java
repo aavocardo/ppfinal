@@ -1,16 +1,18 @@
 package Project.Frames;
 
+
 import Project.Logic.FileManager;
 
+import java.util.ArrayList;
 import java.awt.Font;
 import java.awt.Dimension;
 import java.awt.Color;
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.GridBagLayout;
-import java.util.ArrayList;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JButton;
@@ -71,8 +73,8 @@ public class MainFrame extends JFrame {
         newTeam = new JButton("New Team");
         newTeam.addActionListener(e -> {
             System.out.println("New Team clicked");
-            NewTeamDialog newTeamDialog = new NewTeamDialog();
-            newTeamDialog.setVisible(true);
+            AddTeamDialog addTeamDialog = new AddTeamDialog();
+            addTeamDialog.setVisible(true);
         });
         buttonBox.add(newTeam);
 

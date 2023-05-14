@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="m">
-      <change afterPath="$PROJECT_DIR$/Project/Scratch.java" afterDir="false" />
+    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="can read tables now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/Frames/DisplayTeamsDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/DisplayTeamsDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Frames/FootballerDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/AddFootballerDialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/Frames/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/GUI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Logic/ButtonListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Logic/ButtonListenerInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Logic/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Logic/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Scratch/Example.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Scratch/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Scratch/MyApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Scratch/TableExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Frames/NewTeamDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/AddTeamDialog.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,26 +38,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ToolWindowRun.ShowToolbar": "false",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.import",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />
@@ -172,7 +166,7 @@
       <workItem from="1683928846242" duration="165000" />
       <workItem from="1683961320035" duration="3456000" />
       <workItem from="1683968869461" duration="27689000" />
-      <workItem from="1684046595193" duration="2737000" />
+      <workItem from="1684046595193" duration="5072000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1683968623480</created>
@@ -188,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684005019312</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="can read tables now">
+      <created>1684049930205</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684049930205</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,7 +198,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="m" />
-    <option name="LAST_COMMIT_MESSAGE" value="m" />
+    <MESSAGE value="can read tables now" />
+    <option name="LAST_COMMIT_MESSAGE" value="can read tables now" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
