@@ -22,6 +22,16 @@ public class FileManager {
         this.path = path;
     }
 
+    private static String removeFloatingPoint(String n) {
+        int floatingPointIndex = n.indexOf('.');
+
+        if (floatingPointIndex >= 0) {
+            return n.substring(0, floatingPointIndex);
+        }   else {
+            return n;
+        }
+    }
+
     public static String parseTeamID(Object[] cell) {
         return (String) cell[0];
     }
@@ -43,7 +53,17 @@ public class FileManager {
     }
 
     public static String parseSalary(Object[] cell) {
-        return BigDecimal.valueOf((Double) cell[5]).toPlainString();
+        String salary = removeFloatingPoint(BigDecimal.valueOf((Double) cell[5]).toPlainString());
+        StringBuilder formattedSalary = new StringBuilder();
+        int salaryLength = salary.length();
+
+        for (int i = salaryLength - 1, j = 1; i >= 0; i--, j++) {
+            formattedSalary.insert(0, salary.charAt(i));
+            if (j % 3 == 0 && i != 0) {
+                formattedSalary.insert(0, ",");
+            }
+        }
+        return "$ " + formattedSalary;
     }
 
     public Object[] getRow(String columnName, String searchValue) {
@@ -195,5 +215,6 @@ public class FileManager {
 
         Object[] team = fm.getRow("team_name", "Broncos");
         System.out.println(parseTeamName(team));
+        System.out.println(parseSalary(team));
     }
 }

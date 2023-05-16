@@ -3,21 +3,11 @@ package Project.Frames;
 
 import Project.Logic.FileManager;
 
-import java.util.ArrayList;
-import java.awt.Font;
-import java.awt.Dimension;
-import java.awt.Color;
-import java.awt.BorderLayout;
-import java.awt.GridLayout;
-import java.awt.GridBagLayout;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JButton;
-import javax.swing.BoxLayout;
-import javax.swing.BorderFactory;
+import java.util.ArrayList;
 
 
 public class MainFrame extends JFrame {
@@ -25,7 +15,7 @@ public class MainFrame extends JFrame {
     JPanel dataPanel, buttonBox, buttonPanel, teamPanel;
     JButton newTeam, editTeam, deleteTeam, titleButton;
 
-    protected JPanel data() {
+    private JPanel data() {
         dataPanel = new JPanel();
         dataPanel.setLayout(new BoxLayout(dataPanel, BoxLayout.Y_AXIS));
         dataPanel.setBorder(BorderFactory.createEmptyBorder(20, 50, 20, 50));
@@ -67,8 +57,9 @@ public class MainFrame extends JFrame {
         return dataPanel;
     }
 
-    protected JPanel buttons() {
+    private JPanel buttons() {
         buttonBox = new JPanel(new GridLayout(3, 1));
+        buttonBox.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 20));
 
         newTeam = new JButton("New Team");
         newTeam.addActionListener(e -> {
@@ -79,7 +70,7 @@ public class MainFrame extends JFrame {
         buttonBox.add(newTeam);
 
         editTeam = new JButton("Edit Team");
-        newTeam.addActionListener(e -> {
+        editTeam.addActionListener(e -> {
             System.out.println("Edit Team clicked");
             System.out.println("Just avoiding");
         });
@@ -101,7 +92,7 @@ public class MainFrame extends JFrame {
     public MainFrame() {
         setTitle("Football Team Manager");
         setSize(500, 450);
-        setResizable(false);
+        setResizable(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBackground(new Color(194, 214, 214));
 
