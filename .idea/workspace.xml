@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="optimized imports">
-      <change afterPath="$PROJECT_DIR$/Project/Jean/AddFootballerGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/Jean/AddTeamGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/Jean/Main.java" afterDir="false" />
+    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="addteamgui good, remaking footballergui">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Frames/AddTeamDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/AddTeamGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Frames/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Frames/AddFootballerDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/AddFootballerGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Frames/AddTeamGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/AddTeamGUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +156,7 @@
       <workItem from="1684256007375" duration="7000" />
       <workItem from="1684257138104" duration="203000" />
       <workItem from="1684257348299" duration="96000" />
-      <workItem from="1684260633655" duration="5595000" />
+      <workItem from="1684260633655" duration="6765000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1683968623480</created>
@@ -224,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684257288282</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="addteamgui good, remaking footballergui">
+      <created>1684266568714</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684266568714</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +244,8 @@
     <MESSAGE value="need to fix whitespace issue, add functionality to buttons, and figure out why table labels aren't conforming to alignment positions when adding buttons + optimized imports" />
     <MESSAGE value="fixes, display dialog almost fixed, waiting on add player and team from partner" />
     <MESSAGE value="optimized imports" />
-    <option name="LAST_COMMIT_MESSAGE" value="optimized imports" />
+    <MESSAGE value="addteamgui good, remaking footballergui" />
+    <option name="LAST_COMMIT_MESSAGE" value="addteamgui good, remaking footballergui" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

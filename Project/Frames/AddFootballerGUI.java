@@ -13,96 +13,88 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
 
-public class AddTeamGUI extends JFrame {
-    JLabel teamIDLabel, teamNameLabel, teamLocationLabel;
-    JTextField teamIDField, teamNameField, teamLocationField;
-    JButton addFootballerButton, saveTeamButton;
-    JPanel fieldsPanel, buttonsPanel;
+public class AddFootballerGUI extends JFrame {
+    JLabel footballerIDLabel, footballerNameLabel, footballerSalaryLabel;
+    JTextField footballerIDField, footballerNameField, footballerSalaryField;
+    JButton saveFootballerButton;
+    JPanel fieldPanel, buttonPanel;
 
     private JPanel buttonsPanel() {
         // Create a panel for the buttons
-        buttonsPanel = new JPanel();
-        buttonsPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
+        buttonPanel = new JPanel();
+        buttonPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
 
-        // Create the buttons
-        addFootballerButton = new JButton("Add Footballer");
-        saveTeamButton = new JButton("Save Team");
+        // Create the button
+        saveFootballerButton = new JButton("Save Footballer");
 
-        // Add action listener
-        addFootballerButton.addActionListener(e -> {
-            AddFootballerGUI addFootballerGUI = new AddFootballerGUI();
-            addFootballerGUI.setVisible(true);
-        });
+        // Add button to panel
+        buttonPanel.add(saveFootballerButton);
 
-        // Add buttons to panel
-        buttonsPanel.add(addFootballerButton);
-        buttonsPanel.add(saveTeamButton);
-
-        return buttonsPanel;
+        return buttonPanel;
     }
 
     private JPanel fieldsPanel() {
         // Create a panel for the labels and text fields
-        fieldsPanel = new JPanel();
-        fieldsPanel.setBorder(BorderFactory.createEmptyBorder(10, 20, 5, 20));
-        fieldsPanel.setLayout(new GridBagLayout());
+        fieldPanel = new JPanel();
+        fieldPanel.setBorder(BorderFactory.createEmptyBorder(10, 20, 5, 20));
+        fieldPanel.setLayout(new GridBagLayout());
         GridBagConstraints c = new GridBagConstraints();
 
         // Create labels for team ID, team name, and team location
-        teamIDLabel = new JLabel("Team ID");
-        teamNameLabel = new JLabel("Team Name");
-        teamLocationLabel = new JLabel("Team Location");
+        footballerIDLabel = new JLabel("Footballer ID");
+        footballerNameLabel = new JLabel("Footballer Name");
+        footballerSalaryLabel = new JLabel("Footballer Salary");
 
         // Create text fields for team ID, team name, and team location
-        teamIDField = new JTextField(15);
-        teamNameField = new JTextField(15);
-        teamLocationField = new JTextField(15);
+        footballerIDField = new JTextField(15);
+        footballerNameField = new JTextField(15);
+        footballerSalaryField = new JTextField(15);
 
         // Add constraints for team ID label and field
         c.gridx = 0;
         c.gridy = 0;
         c.anchor = GridBagConstraints.LINE_START;
         c.insets = new Insets(0, 0, 0, 5);
-        fieldsPanel.add(teamIDLabel, c);
+        fieldPanel.add(footballerIDLabel, c);
 
         c.gridx = 1;
         c.gridy = 0;
         c.anchor = GridBagConstraints.CENTER;
         c.insets = new Insets(0, 5, 0, 0);
-        fieldsPanel.add(teamIDField, c);
+        fieldPanel.add(footballerIDField, c);
 
         // Add constraints for team name label and field
         c.gridx = 0;
         c.gridy = 1;
         c.anchor = GridBagConstraints.LINE_START;
         c.insets = new Insets(0, 0, 0, 5);
-        fieldsPanel.add(teamNameLabel, c);
+        fieldPanel.add(footballerNameLabel, c);
 
         c.gridx = 1;
         c.gridy = 1;
         c.anchor = GridBagConstraints.CENTER;
         c.insets = new Insets(0, 5, 0, 0);
-        fieldsPanel.add(teamNameField, c);
+        fieldPanel.add(footballerNameField, c);
 
         // Add constraints for team location label and field
         c.gridx = 0;
         c.gridy = 2;
         c.anchor = GridBagConstraints.LINE_START;
         c.insets = new Insets(0, 0, 0, 5);
-        fieldsPanel.add(teamLocationLabel, c);
+        fieldPanel.add(footballerSalaryLabel, c);
 
         c.gridx = 1;
         c.gridy = 2;
         c.anchor = GridBagConstraints.CENTER;
         c.insets = new Insets(0, 5, 0, 0);
-        fieldsPanel.add(teamLocationField, c);
+        fieldPanel.add(footballerSalaryField, c);
 
-        return fieldsPanel;
+        return fieldPanel;
     }
 
-    public AddTeamGUI() {
+    public AddFootballerGUI() {
         // Set up the JFrame
-        setTitle("Team Manager");
+        setTitle("Player Manager");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLayout(new BorderLayout());
 
