@@ -157,10 +157,17 @@ public class DisplayTeamsDialog extends JFrame {
         buttonPanel = new JPanel();
         buttonPanel.setBorder(BorderFactory.createEmptyBorder(10, 0, 10, 0));
 
-
         editTeam = new JButton("Edit Team");
+        editTeam.addActionListener(e -> {
+            AddTeamGUI addTeamGUI = new AddTeamGUI();
+            addTeamGUI.setVisible(true);
+        });
 
         addFootballer = new JButton("Add Footballer");
+        addFootballer.addActionListener(e -> {
+            AddFootballerGUI addFootballerGUI = new AddFootballerGUI();
+            addFootballerGUI.setVisible(true);
+        });
 
         buttonPanel.add(editTeam);
         buttonPanel.add(addFootballer);

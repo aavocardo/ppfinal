@@ -2,17 +2,8 @@ package Project.Frames;
 
 import Project.Logic.FileManager;
 
-import javax.swing.BorderFactory;
-import javax.swing.BoxLayout;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.GridBagLayout;
-import java.awt.GridLayout;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
@@ -22,6 +13,7 @@ public class MainFrame extends JFrame {
     FileManager file = new FileManager("./Project/Data.xlsx");
     JPanel dataPanel, buttonBox, buttonPanel, teamPanel;
     JButton newTeam, editTeam, deleteTeam, titleButton;
+    Font tableFont = new Font("San Francisco", Font.PLAIN, 20);
 
     private JPanel data() {
         dataPanel = new JPanel();
@@ -44,6 +36,7 @@ public class MainFrame extends JFrame {
             JButton teamName = new JButton(team);
             teamName.setPreferredSize(new Dimension(200, 20));
             teamName.setFocusable(true);
+            teamName.setFont(tableFont);
             teamName.addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseClicked(MouseEvent e) {

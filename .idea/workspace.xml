@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="addteamgui good, remaking footballergui">
+    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="done with gui">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Frames/AddFootballerDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/AddFootballerGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/Frames/AddTeamGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/AddTeamGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Frames/DisplayTeamsDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/DisplayTeamsDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Frames/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/MainFrame.java" afterDir="false" />
     </list>
+    <list id="dfc4209a-a7d2-4645-86cf-5b39b07bb328" name="Changes by Jano" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,7 +158,11 @@
       <workItem from="1684256007375" duration="7000" />
       <workItem from="1684257138104" duration="203000" />
       <workItem from="1684257348299" duration="96000" />
-      <workItem from="1684260633655" duration="6765000" />
+      <workItem from="1684260633655" duration="7094000" />
+      <workItem from="1684267973758" duration="59000" />
+      <workItem from="1684268049687" duration="41000" />
+      <workItem from="1684312076506" duration="22000" />
+      <workItem from="1684313141103" duration="1358000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1683968623480</created>
@@ -228,7 +234,28 @@
       <option name="project" value="LOCAL" />
       <updated>1684266568714</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="done with gui">
+      <created>1684267691422</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684267691422</updated>
+    </task>
+    <task id="LOCAL-00012" summary="done with gui">
+      <created>1684268080264</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684268080264</updated>
+    </task>
+    <task id="LOCAL-00013" summary="done with gui">
+      <created>1684268085093</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684268085093</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +272,8 @@
     <MESSAGE value="fixes, display dialog almost fixed, waiting on add player and team from partner" />
     <MESSAGE value="optimized imports" />
     <MESSAGE value="addteamgui good, remaking footballergui" />
-    <option name="LAST_COMMIT_MESSAGE" value="addteamgui good, remaking footballergui" />
+    <MESSAGE value="done with gui" />
+    <option name="LAST_COMMIT_MESSAGE" value="done with gui" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

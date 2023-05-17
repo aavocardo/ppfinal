@@ -111,7 +111,7 @@ public class AddTeamGUI extends JFrame {
 
         // Pack and display the JFrame
         pack();
-        setPreferredSize(new Dimension(350, 200)); // Set the window size
+        setPreferredSize(new Dimension(420, 240)); // Set the window size
         setLocationRelativeTo(null); // Center the JFrame on the screen
         setResizable(false);
         setVisible(true);
