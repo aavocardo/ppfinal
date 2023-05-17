@@ -10,17 +10,19 @@ import java.util.ArrayList;
 
 
 public class MainFrame extends JFrame {
-    FileManager file = new FileManager("./Project/Data.xlsx");
+    FileManager data = new FileManager("./Project/Data.xlsx");
+    FileManager teamData = new FileManager("./Project/Teams.xlsx");
     JPanel dataPanel, buttonBox, buttonPanel, teamPanel;
     JButton newTeam, editTeam, deleteTeam, titleButton;
     Font tableFont = new Font("San Francisco", Font.PLAIN, 20);
+    Font buttonFont =  new Font("San Fransisco", Font.BOLD, 12);
 
     private JPanel data() {
         dataPanel = new JPanel();
         dataPanel.setLayout(new BoxLayout(dataPanel, BoxLayout.Y_AXIS));
         dataPanel.setBorder(BorderFactory.createEmptyBorder(20, 50, 20, 50));
 
-        ArrayList<String> teams = (ArrayList<String>) file.getUniqueValues("team_name");
+        ArrayList<String> teams = (ArrayList<String>) teamData.getUniqueValues("team_name");
         teams.remove(0);    // Remove column name (location)
 
         titleButton = new JButton("Teams");
@@ -63,6 +65,7 @@ public class MainFrame extends JFrame {
         buttonBox.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 20));
 
         newTeam = new JButton("New Team");
+        newTeam.setFont(buttonFont);
         newTeam.addActionListener(e -> {
             System.out.println("New Team clicked");
             AddTeamGUI addTeamGUI = new AddTeamGUI();
@@ -71,6 +74,7 @@ public class MainFrame extends JFrame {
         buttonBox.add(newTeam);
 
         editTeam = new JButton("Edit Team");
+        editTeam.setFont(buttonFont);
         editTeam.addActionListener(e -> {
             System.out.println("Edit Team clicked");
             System.out.println("Just avoiding");
@@ -78,6 +82,7 @@ public class MainFrame extends JFrame {
         buttonBox.add(editTeam);
 
         deleteTeam = new JButton("Delete Team");
+        deleteTeam.setFont(buttonFont);
         deleteTeam.addActionListener(e -> {
             System.out.println("Delete Team clicked");
             System.out.println("Just avoiding");

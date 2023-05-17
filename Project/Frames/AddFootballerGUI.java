@@ -1,5 +1,7 @@
 package Project.Frames;
 
+import Project.Logic.FileManager;
+
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -18,8 +20,13 @@ public class AddFootballerGUI extends JFrame {
     JTextField footballerIDField, footballerNameField, footballerSalaryField;
     JButton saveFootballerButton;
     JPanel fieldPanel, buttonPanel;
+    String[] teamData, footballerData;
+    String footballerID, footballerName, footballerSalary;
+    FileManager file = new FileManager("./Project/Data.xlsx");
 
-    private JPanel buttonsPanel() {
+
+
+    protected JPanel buttonsPanel() {
         // Create a panel for the buttons
         buttonPanel = new JPanel();
         buttonPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
@@ -90,6 +97,13 @@ public class AddFootballerGUI extends JFrame {
         fieldPanel.add(footballerSalaryField, c);
 
         return fieldPanel;
+    }
+
+    protected String[] footballerData() {
+        footballerID = footballerIDField.getText();
+        footballerName = footballerNameField.getText();
+        footballerSalary = footballerSalaryField.getText();
+        return new String[]{footballerID, footballerName, footballerSalary};
     }
 
     public AddFootballerGUI() {

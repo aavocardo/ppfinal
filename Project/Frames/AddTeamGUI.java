@@ -1,5 +1,7 @@
 package Project.Frames;
 
+import Project.Logic.FileManager;
+
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -12,12 +14,17 @@ import java.awt.FlowLayout;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
+import java.awt.event.ActionEvent;
+
 
 public class AddTeamGUI extends JFrame {
     JLabel teamIDLabel, teamNameLabel, teamLocationLabel;
     JTextField teamIDField, teamNameField, teamLocationField;
     JButton addFootballerButton, saveTeamButton;
     JPanel fieldsPanel, buttonsPanel;
+    String teamID, teamName, teamLocation;
+    FileManager data = new FileManager("./Project/Data.xlsx");
+    FileManager teamData = new FileManager("./Project/Teams.xlsx");
 
     private JPanel buttonsPanel() {
         // Create a panel for the buttons
@@ -30,8 +37,24 @@ public class AddTeamGUI extends JFrame {
 
         // Add action listener
         addFootballerButton.addActionListener(e -> {
+            teamID = teamIDField.getText();
+            teamName = teamNameField.getText();
+            teamLocation = teamLocationField.getText();
+
+            String[] td = {teamID, teamName, teamLocation};
+
             AddFootballerGUI addFootballerGUI = new AddFootballerGUI();
             addFootballerGUI.setVisible(true);
+
+            addFootballerGUI.saveFootballerButton.addActionListener((ActionEvent event) -> {
+                String[] fd = data.footballerData(addFootballerGUI.footballerIDField.getText(), addFootballerGUI.footballerNameField.getText(), addFootballerGUI.footballerSalaryField.getText());
+                data.addDataRow(td, fd);
+            });
+        });
+
+        saveTeamButton.addActionListener(e -> {
+            String[] td = teamData.teamData(teamIDField.getText(), teamNameField.getText(), teamLocationField.getText());
+            teamData.addRow(td);
         });
 
         // Add buttons to panel

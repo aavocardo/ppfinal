@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="github">
+      <change afterPath="$PROJECT_DIR$/Project/Data.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/Teams.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Data.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/AddFootballerGUI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/AddTeamGUI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/DisplayTeamsDialog$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/DisplayTeamsDialog$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/DisplayTeamsDialog$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/DisplayTeamsDialog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/MainFrame$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/MainFrame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/FileManager$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/FileManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/Footballer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/Team.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/finalProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/lib/commons-collections4-4.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/lib/poi-3.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/lib/poi-ooxml-3.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/lib/poi-ooxml-schemas-3.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/lib/xmlbeans-2.6.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Frames/AddTeamGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/AddTeamGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Frames/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Logic/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Logic/FileManager.java" afterDir="false" />
+    </list>
+    <list id="dfc4209a-a7d2-4645-86cf-5b39b07bb328" name="Changes by Jano" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Frames/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/MainFrame.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="ab40eeb2-dd4d-4233-9d3d-727badfba55e" />
+        <option name="url" value="https://github.com/aavocardo/ppfinal" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/Project/Frames/MainFrame.java">
+      <ranges>
+        <range start1="12" end1="13" start2="12" end2="14" changelist="8edbae0d-1630-45e6-a96b-6db7b038e4f8" />
+        <range start1="16" end1="16" start2="17" end2="18" changelist="dfc4209a-a7d2-4645-86cf-5b39b07bb328" />
+        <range start1="22" end1="23" start2="24" end2="25" changelist="8edbae0d-1630-45e6-a96b-6db7b038e4f8" />
+        <range start1="65" end1="65" start2="67" end2="68" changelist="dfc4209a-a7d2-4645-86cf-5b39b07bb328" />
+        <range start1="73" end1="73" start2="76" end2="77" changelist="dfc4209a-a7d2-4645-86cf-5b39b07bb328" />
+        <range start1="80" end1="80" start2="84" end2="85" changelist="dfc4209a-a7d2-4645-86cf-5b39b07bb328" />
+      </ranges>
+    </file>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2Ph0gkfyPsCZ4f7XsqUj4lTHfPD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ToolWindowRun.ShowToolbar": "false",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Project/Jean" />
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="FileManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Project.Logic.FileManager" />
+      <module name="finalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Project.Logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Project.Logic.FileManager" />
+      <module name="finalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Project.Logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Project.Main" />
+      <module name="finalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Project.Jean.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Project.Jean.Main" />
+      <module name="finalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Project.Jean.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Project.Jean.Main" />
+      <item itemvalue="Application.FileManager" />
+      <item itemvalue="Application.Main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.FileManager" />
+        <item itemvalue="Application.Project.Jean.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="" />
+      <created>1683894119540</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683894119540</updated>
+      <workItem from="1683894120905" duration="4582000" />
+      <workItem from="1683912552039" duration="13294000" />
+      <workItem from="1683928846242" duration="165000" />
+      <workItem from="1683961320035" duration="3456000" />
+      <workItem from="1683968869461" duration="27689000" />
+      <workItem from="1684046595193" duration="14479000" />
+      <workItem from="1684089605285" duration="1843000" />
+      <workItem from="1684092159525" duration="17000" />
+      <workItem from="1684138255769" duration="107000" />
+      <workItem from="1684144646127" duration="46000" />
+      <workItem from="1684164609028" duration="6088000" />
+      <workItem from="1684181705955" duration="109000" />
+      <workItem from="1684255767550" duration="230000" />
+      <workItem from="1684256007375" duration="7000" />
+      <workItem from="1684257138104" duration="203000" />
+      <workItem from="1684257348299" duration="96000" />
+      <workItem from="1684260633655" duration="7094000" />
+      <workItem from="1684267973758" duration="59000" />
+      <workItem from="1684268049687" duration="41000" />
+      <workItem from="1684312076506" duration="22000" />
+      <workItem from="1684313141103" duration="6683000" />
+    </task>
+    <task id="LOCAL-00001" summary="m">
+      <created>1683968623480</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683968623480</updated>
+    </task>
+    <task id="LOCAL-00002" summary="m">
+      <created>1684005019312</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684005019312</updated>
+    </task>
+    <task id="LOCAL-00003" summary="can read tables now">
+      <created>1684049930205</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684049930205</updated>
+    </task>
+    <task id="LOCAL-00004" summary="decent progress">
+      <created>1684052353044</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684052353044</updated>
+    </task>
+    <task id="LOCAL-00005" summary="done with tbales and parsing in DisplayTeamsDialog.java">
+      <created>1684059857789</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684059857789</updated>
+    </task>
+    <task id="LOCAL-00006" summary="need to fix whitespace issue, add functionality to buttons, and figure out why table labels aren't conforming to alignment positions when adding buttons">
+      <created>1684061568526</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684061568526</updated>
+    </task>
+    <task id="LOCAL-00007" summary="need to fix whitespace issue, add functionality to buttons, and figure out why table labels aren't conforming to alignment positions when adding buttons + optimized imports">
+      <created>1684089967784</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684089967784</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fixes, display dialog almost fixed, waiting on add player and team from partner">
+      <created>1684255921001</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684255921001</updated>
+    </task>
+    <task id="LOCAL-00009" summary="optimized imports">
+      <created>1684257288282</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684257288282</updated>
+    </task>
+    <task id="LOCAL-00010" summary="addteamgui good, remaking footballergui">
+      <created>1684266568714</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684266568714</updated>
+    </task>
+    <task id="LOCAL-00011" summary="done with gui">
+      <created>1684267691422</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684267691422</updated>
+    </task>
+    <task id="LOCAL-00012" summary="done with gui">
+      <created>1684268080264</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684268080264</updated>
+    </task>
+    <task id="LOCAL-00013" summary="done with gui">
+      <created>1684268085093</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684268085093</updated>
+    </task>
+    <task id="LOCAL-00014" summary="done with gui">
+      <created>1684314564346</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1684314564346</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="m" />
+    <MESSAGE value="can read tables now" />
+    <MESSAGE value="decent progress" />
+    <MESSAGE value="done with tbales and parsing in DisplayTeamsDialog.java" />
+    <MESSAGE value="need to fix whitespace issue, add functionality to buttons, and figure out why table labels aren't conforming to alignment positions when adding buttons" />
+    <MESSAGE value="need to fix whitespace issue, add functionality to buttons, and figure out why table labels aren't conforming to alignment positions when adding buttons + optimized imports" />
+    <MESSAGE value="fixes, display dialog almost fixed, waiting on add player and team from partner" />
+    <MESSAGE value="optimized imports" />
+    <MESSAGE value="addteamgui good, remaking footballergui" />
+    <MESSAGE value="done with gui" />
+    <MESSAGE value="github" />
+    <option name="LAST_COMMIT_MESSAGE" value="github" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassCastException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

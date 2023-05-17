@@ -4,13 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="done with gui">
+    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="github">
+      <change afterPath="$PROJECT_DIR$/Project/Data.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/Teams.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/~$Data.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Data.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/AddFootballerGUI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/AddTeamGUI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/DisplayTeamsDialog$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/DisplayTeamsDialog$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/DisplayTeamsDialog$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/DisplayTeamsDialog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/MainFrame$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/MainFrame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/FileManager$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/FileManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/Footballer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/Team.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/finalProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/lib/commons-collections4-4.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/lib/poi-3.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/lib/poi-ooxml-3.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/lib/poi-ooxml-schemas-3.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/finalProject/lib/xmlbeans-2.6.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Frames/AddFootballerGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/AddFootballerGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/Frames/AddTeamGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/AddTeamGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/Frames/DisplayTeamsDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/DisplayTeamsDialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/Frames/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Logic/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Logic/FileManager.java" afterDir="false" />
     </list>
-    <list id="dfc4209a-a7d2-4645-86cf-5b39b07bb328" name="Changes by Jano" comment="" />
+    <list id="dfc4209a-a7d2-4645-86cf-5b39b07bb328" name="Changes by Jano" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +64,22 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="ab40eeb2-dd4d-4233-9d3d-727badfba55e" />
+        <option name="url" value="https://github.com/aavocardo/ppfinal" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -50,11 +101,13 @@
     &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;false&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -129,8 +182,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Project.Jean.Main" />
         <item itemvalue="Application.FileManager" />
+        <item itemvalue="Application.Project.Jean.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +215,8 @@
       <workItem from="1684267973758" duration="59000" />
       <workItem from="1684268049687" duration="41000" />
       <workItem from="1684312076506" duration="22000" />
-      <workItem from="1684313141103" duration="1358000" />
+      <workItem from="1684313141103" duration="6683000" />
+      <workItem from="1684323091599" duration="8850000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1683968623480</created>
@@ -255,11 +309,29 @@
       <option name="project" value="LOCAL" />
       <updated>1684268085093</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="done with gui">
+      <created>1684314564346</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1684314564346</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -273,7 +345,8 @@
     <MESSAGE value="optimized imports" />
     <MESSAGE value="addteamgui good, remaking footballergui" />
     <MESSAGE value="done with gui" />
-    <option name="LAST_COMMIT_MESSAGE" value="done with gui" />
+    <MESSAGE value="github" />
+    <option name="LAST_COMMIT_MESSAGE" value="github" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

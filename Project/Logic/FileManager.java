@@ -7,6 +7,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -206,9 +207,44 @@ public class FileManager {
         return uniqueValues;
     }
 
+    public void addRow(String[] rowData) {
+        try {
+            FileInputStream inputStream = new FileInputStream(this.path);
+            XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
+            XSSFSheet sheet = workbook.getSheetAt(0);
+
+            Row newRow = sheet.createRow(sheet.getLastRowNum() + 1);
+            for (int i = 0; i < rowData.length; i++) {
+                Cell newCell = newRow.createCell(i);
+                newCell.setCellValue(rowData[i]);
+            }
+
+            FileOutputStream outputStream = new FileOutputStream(this.path);
+            workbook.write(outputStream);
+            workbook.close();
+            outputStream.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public String[] teamData(String teamID, String teamName, String teamLocation) {
+        return new String[]{teamID, teamName, teamLocation};
+    }
+
+    public String[] footballerData(String footballerID, String footballerName, String footballerSalary) {
+        return new String[]{footballerID, footballerName, footballerSalary};
+    }
+
+    public void addDataRow(String[] a, String[] b) {
+        String[] result = new String[a.length + b.length];
+        System.arraycopy(a, 0, result, 0, a.length);
+        System.arraycopy(b, 0, result, a.length, b.length);
+        addRow(result);
+    }
+
     public static void main(String[] args) {
         FileManager fm = new FileManager("./Project/Data.xlsx");
-
         List<String> teams = fm.getUniqueValues("location");
         System.out.println(teams);
         System.out.println("LINE BREAK");

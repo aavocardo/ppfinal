@@ -2,26 +2,17 @@ package Project.Frames;
 
 import Project.Logic.FileManager;
 
-import javax.swing.BorderFactory;
-import javax.swing.BoxLayout;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
+import javax.swing.*;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.JTableHeader;
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
-import java.awt.Font;
+import java.awt.*;
 
 import static Project.Logic.FileManager.*;
 
 
 public class DisplayTeamsDialog extends JFrame {
+    AddFootballerGUI addFootballerGUI;
+    AddTeamGUI addTeamGUI;
     String teamName;
     Object[] teamData, playerData;
     JTable teamInformation, playerInformation;
@@ -31,12 +22,15 @@ public class DisplayTeamsDialog extends JFrame {
     JScrollPane teamScrollPane, playerScrollPane;
     JButton editTeam, addFootballer;
     DefaultTableCellRenderer centerRenderer;
+    String[] teamSection, footballerSection;
     FileManager file = new FileManager("./Project/Data.xlsx");
+    FileManager teamFile = new FileManager("./Project/Teams.xlsx");
     Color headerColor = new Color(204, 217, 255);
     Color tableColor = new Color(153, 179, 255);
     Font headerFont = new Font("San Francisco", Font.BOLD, 12);
     Font tableFont = new Font("San Francisco", Font.PLAIN, 12);
     Font labelFont = new Font("San Francisco", Font.BOLD, 16);
+    String footballerID, footballerName, footballerSalary;
 
     private JPanel teamInformation() {
         teamPanel = new JPanel();
@@ -159,14 +153,26 @@ public class DisplayTeamsDialog extends JFrame {
 
         editTeam = new JButton("Edit Team");
         editTeam.addActionListener(e -> {
-            AddTeamGUI addTeamGUI = new AddTeamGUI();
+            addTeamGUI = new AddTeamGUI();
             addTeamGUI.setVisible(true);
         });
 
         addFootballer = new JButton("Add Footballer");
         addFootballer.addActionListener(e -> {
-            AddFootballerGUI addFootballerGUI = new AddFootballerGUI();
+            addFootballerGUI = new AddFootballerGUI();
             addFootballerGUI.setVisible(true);
+
+            Object[] td = teamFile.getRow("team_name", this.teamName);
+            teamSection = file.teamData(parseTeamID(td), parseTeamName(td), parseLocation(td));
+//            footballerSection = addFootballerGUI.footballerData();
+            addFootballerGUI.saveFootballerButton.addActionListener(l -> {
+                footballerID = addFootballerGUI.footballerIDField.getText();
+                footballerName = addFootballerGUI.footballerNameField.getText();
+                footballerSalary = addFootballerGUI.footballerSalaryField.getText();
+
+                footballerSection = file.footballerData(footballerID, footballerName, footballerSalary);
+                file.addDataRow(teamSection, footballerSection);
+            });
         });
 
         buttonPanel.add(editTeam);
