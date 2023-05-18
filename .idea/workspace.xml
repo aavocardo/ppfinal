@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="fml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Data.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Frames/DisplayTeamsDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/DisplayTeamsDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Frames/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Frames/TeamManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/TeamManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Logic/Footballer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Logic/Team.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Teams.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Teams.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Data.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/DisplayTeamsDialog$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/DisplayTeamsDialog$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/DisplayTeamsDialog$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/DisplayTeamsDialog$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/DisplayTeamsDialog$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/DisplayTeamsDialog$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/DisplayTeamsDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/DisplayTeamsDialog.class" afterDir="false" />
-    </list>
+    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="fml" />
     <list id="dfc4209a-a7d2-4645-86cf-5b39b07bb328" name="Changes by Jano" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
@@ -195,7 +181,7 @@
       <workItem from="1684323091599" duration="9868000" />
       <workItem from="1684335683390" duration="4693000" />
       <workItem from="1684351744556" duration="1246000" />
-      <workItem from="1684383480176" duration="4862000" />
+      <workItem from="1684383480176" duration="4876000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1683968623480</created>
@@ -309,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684392626916</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fml">
+      <created>1684393086409</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1684393086409</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

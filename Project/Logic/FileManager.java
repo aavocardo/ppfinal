@@ -290,15 +290,4 @@ public class FileManager {
         System.arraycopy(b, 0, result, a.length, b.length);
         addRow(result);
     }
-
-    public static void main(String[] args) {
-        FileManager fm = new FileManager("./Project/Data.xlsx");
-        List<String> teams = fm.getUniqueValues("location");
-        System.out.println(teams);
-        System.out.println("LINE BREAK");
-
-        Object[] team = fm.getRow("team_name", "Broncos");
-        System.out.println(parseTeamName(team));
-        System.out.println(parseSalary(team));
-    }
 }
