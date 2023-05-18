@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="fml" />
+    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="1001 lines, project done, waiting for partner confirmation to submit">
+      <change afterPath="$PROJECT_DIR$/Project/Frames/ErrorFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Frames/DisplayTeamsDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/DisplayTeamsDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Teams.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Teams.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/finalProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/MainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/MainFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/MainFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/FileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/FileManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/Footballer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/Team.class" beforeDir="false" />
+    </list>
     <list id="dfc4209a-a7d2-4645-86cf-5b39b07bb328" name="Changes by Jano" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
@@ -84,6 +97,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
+    <configuration name="ErrorFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Project.Frames.ErrorFrame" />
+      <module name="finalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Project.Frames.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FileManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Project.Logic.FileManager" />
       <module name="finalProject" />
@@ -137,6 +163,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.ErrorFrame" />
       <item itemvalue="Application.Project.Jean.Main" />
       <item itemvalue="Application.FileManager" />
       <item itemvalue="Application.Main" />
@@ -144,6 +171,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ErrorFrame" />
         <item itemvalue="Application.FileManager" />
         <item itemvalue="Application.Project.Jean.Main" />
       </list>
@@ -182,6 +210,10 @@
       <workItem from="1684335683390" duration="4693000" />
       <workItem from="1684351744556" duration="1246000" />
       <workItem from="1684383480176" duration="4876000" />
+      <workItem from="1684393745312" duration="76000" />
+      <workItem from="1684402072901" duration="270000" />
+      <workItem from="1684402373306" duration="37000" />
+      <workItem from="1684403143021" duration="1351000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1683968623480</created>
@@ -302,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684393086409</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="1001 lines, project done, waiting for partner confirmation to submit">
+      <created>1684393816766</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1684393816766</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,7 +372,8 @@
     <MESSAGE value="done with gui" />
     <MESSAGE value="github" />
     <MESSAGE value="fml" />
-    <option name="LAST_COMMIT_MESSAGE" value="fml" />
+    <MESSAGE value="1001 lines, project done, waiting for partner confirmation to submit" />
+    <option name="LAST_COMMIT_MESSAGE" value="1001 lines, project done, waiting for partner confirmation to submit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -50,7 +50,15 @@ public class DisplayTeamsDialog extends JFrame {
         teamPanel = new JPanel();
         teamPanel.setLayout(new BoxLayout(teamPanel, BoxLayout.PAGE_AXIS));
 
-        teamData = file.getRow("team_name", this.teamName);
+        try {
+            teamData = file.getRow("team_name", this.teamName);
+            Object[][] teamTable = {{parseTeamID(teamData), parseTeamName(teamData), parseLocation(teamData)}};
+            System.out.println(teamTable.length);
+        } catch (Throwable t) {
+            ErrorFrame errorFrame = new ErrorFrame();
+            errorFrame.setVisible(true);
+        }
+
         Object[][] teamTable = {{parseTeamID(teamData), parseTeamName(teamData), parseLocation(teamData)}};
         String[] teamColumns = {"Team ID", "Team Name", "Location"};
 

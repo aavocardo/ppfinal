@@ -4,23 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="github">
+    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="1001 lines, project done, waiting for partner confirmation to submit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Data.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Frames/AddFootballerGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/AddFootballerGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Frames/DisplayTeamsDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/DisplayTeamsDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Frames/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Logic/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Logic/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Teams.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Teams.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/~$Data.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/finalProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Data.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/AddFootballerGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/AddFootballerGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/DisplayTeamsDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/DisplayTeamsDialog.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/MainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/MainFrame$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/MainFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/FileManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/FileManager$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/FileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/FileManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/Footballer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/Team.class" beforeDir="false" />
     </list>
     <list id="dfc4209a-a7d2-4645-86cf-5b39b07bb328" name="Changes by Jano" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -198,6 +189,10 @@
       <workItem from="1684323091599" duration="9868000" />
       <workItem from="1684335683390" duration="4693000" />
       <workItem from="1684351744556" duration="1246000" />
+      <workItem from="1684383480176" duration="4876000" />
+      <workItem from="1684393745312" duration="76000" />
+      <workItem from="1684402072901" duration="270000" />
+      <workItem from="1684402373306" duration="37000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1683968623480</created>
@@ -304,7 +299,28 @@
       <option name="project" value="LOCAL" />
       <updated>1684333895166</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fml">
+      <created>1684392626916</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1684392626916</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fml">
+      <created>1684393086409</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1684393086409</updated>
+    </task>
+    <task id="LOCAL-00018" summary="1001 lines, project done, waiting for partner confirmation to submit">
+      <created>1684393816766</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1684393816766</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +350,9 @@
     <MESSAGE value="addteamgui good, remaking footballergui" />
     <MESSAGE value="done with gui" />
     <MESSAGE value="github" />
-    <option name="LAST_COMMIT_MESSAGE" value="github" />
+    <MESSAGE value="fml" />
+    <MESSAGE value="1001 lines, project done, waiting for partner confirmation to submit" />
+    <option name="LAST_COMMIT_MESSAGE" value="1001 lines, project done, waiting for partner confirmation to submit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
