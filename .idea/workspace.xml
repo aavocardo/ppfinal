@@ -4,19 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="1001 lines, project done, waiting for partner confirmation to submit">
-      <change afterPath="$PROJECT_DIR$/Project/Frames/ErrorFrame.java" afterDir="false" />
+    <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="added error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Data.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Frames/DisplayTeamsDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/DisplayTeamsDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Frames/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Frames/TeamManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/TeamManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/Teams.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Teams.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/finalProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Data.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/MainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/MainFrame$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/MainFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/FileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/FileManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/Footballer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Logic/Team.class" beforeDir="false" />
     </list>
     <list id="dfc4209a-a7d2-4645-86cf-5b39b07bb328" name="Changes by Jano" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -213,7 +210,9 @@
       <workItem from="1684393745312" duration="76000" />
       <workItem from="1684402072901" duration="270000" />
       <workItem from="1684402373306" duration="37000" />
-      <workItem from="1684403143021" duration="1351000" />
+      <workItem from="1684403143021" duration="1478000" />
+      <workItem from="1684405605154" duration="554000" />
+      <workItem from="1684406386366" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1683968623480</created>
@@ -341,7 +340,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684393816766</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="1001 lines, project done, waiting for partner confirmation to submit">
+      <created>1684404553564</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1684404553564</updated>
+    </task>
+    <task id="LOCAL-00020" summary="added error">
+      <created>1684404619914</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1684404619914</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +386,8 @@
     <MESSAGE value="github" />
     <MESSAGE value="fml" />
     <MESSAGE value="1001 lines, project done, waiting for partner confirmation to submit" />
-    <option name="LAST_COMMIT_MESSAGE" value="1001 lines, project done, waiting for partner confirmation to submit" />
+    <MESSAGE value="added error" />
+    <option name="LAST_COMMIT_MESSAGE" value="added error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

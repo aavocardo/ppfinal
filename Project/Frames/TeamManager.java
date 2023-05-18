@@ -2,19 +2,8 @@ package Project.Frames;
 
 import Project.Logic.FileManager;
 
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.Insets;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 
 
@@ -26,6 +15,7 @@ public class TeamManager extends JFrame {
     String teamID, teamName, teamLocation;
     FileManager data = new FileManager("./Project/Data.xlsx");
     FileManager teamData = new FileManager("./Project/Teams.xlsx");
+    MainFrame mainFrame = new MainFrame();
 
     private JPanel buttonsPanel() {
         // Create a panel for the buttons
@@ -56,6 +46,7 @@ public class TeamManager extends JFrame {
         saveTeamButton.addActionListener(e -> {
             String[] td = teamData.teamData(teamIDField.getText(), teamNameField.getText(), teamLocationField.getText());
             teamData.addRow(td);
+            mainFrame.refresh();
             dispose();
         });
 

@@ -2,17 +2,8 @@ package Project.Frames;
 
 import Project.Logic.FileManager;
 
-import javax.swing.BorderFactory;
-import javax.swing.BoxLayout;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.GridBagLayout;
-import java.awt.GridLayout;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.awt.event.MouseAdapter;
@@ -31,6 +22,12 @@ public class MainFrame extends JFrame {
     JButton newTeam, editTeam, deleteTeam, titleButton;
     Font tableFont = new Font("San Francisco", Font.PLAIN, 20);
     Font buttonFont =  new Font("San Fransisco", Font.BOLD, 12);
+
+    public void refresh() {
+        invalidate();
+        validate();
+        repaint();
+    }
 
     private JPanel data() {
         dataPanel = new JPanel();
@@ -86,6 +83,7 @@ public class MainFrame extends JFrame {
             System.out.println("New Team clicked");
             TeamManager teamManager = new TeamManager();
             teamManager.setVisible(true);
+            teamManager.saveTeamButton.addActionListener(l -> refresh());
         });
         buttonBox.add(newTeam);
 
@@ -164,6 +162,7 @@ public class MainFrame extends JFrame {
             } catch (IOException ex) {
                 throw new RuntimeException(ex);
             }
+            refresh();
         });
         buttonBox.add(deleteTeam);
 
