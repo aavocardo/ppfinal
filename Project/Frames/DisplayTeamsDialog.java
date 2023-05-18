@@ -2,17 +2,29 @@ package Project.Frames;
 
 import Project.Logic.FileManager;
 
-import javax.swing.*;
+import javax.swing.BorderFactory;
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.JTableHeader;
-import java.awt.*;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Font;
 
 import static Project.Logic.FileManager.*;
 
 
 public class DisplayTeamsDialog extends JFrame {
-    AddFootballerGUI addFootballerGUI;
-    AddTeamGUI addTeamGUI;
+    PlayerManager playerManager;
+    TeamManager teamManager;
     String teamName;
     Object[] teamData, playerData;
     JTable teamInformation, playerInformation;
@@ -153,25 +165,26 @@ public class DisplayTeamsDialog extends JFrame {
 
         editTeam = new JButton("Edit Team");
         editTeam.addActionListener(e -> {
-            addTeamGUI = new AddTeamGUI();
-            addTeamGUI.setVisible(true);
+            teamManager = new TeamManager();
+            teamManager.setVisible(true);
         });
 
         addFootballer = new JButton("Add Footballer");
         addFootballer.addActionListener(e -> {
-            addFootballerGUI = new AddFootballerGUI();
-            addFootballerGUI.setVisible(true);
+            playerManager = new PlayerManager();
+            playerManager.setVisible(true);
 
             Object[] td = teamFile.getRow("team_name", this.teamName);
             teamSection = file.teamData(parseTeamID(td), parseTeamName(td), parseLocation(td));
-//            footballerSection = addFootballerGUI.footballerData();
-            addFootballerGUI.saveFootballerButton.addActionListener(l -> {
-                footballerID = addFootballerGUI.footballerIDField.getText();
-                footballerName = addFootballerGUI.footballerNameField.getText();
-                footballerSalary = addFootballerGUI.footballerSalaryField.getText();
+            playerManager.saveFootballerButton.addActionListener(l -> {
+                footballerID = playerManager.footballerIDField.getText();
+                footballerName = playerManager.footballerNameField.getText();
+                footballerSalary = playerManager.footballerSalaryField.getText();
+                System.out.println(footballerSalary);
 
                 footballerSection = file.footballerData(footballerID, footballerName, footballerSalary);
                 file.addDataRow(teamSection, footballerSection);
+                playerManager.dispose();
             });
         });
 

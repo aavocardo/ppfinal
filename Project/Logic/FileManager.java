@@ -1,13 +1,17 @@
 package Project.Logic;
 
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -65,6 +69,40 @@ public class FileManager {
             }
         }
         return "$ " + formattedSalary;
+    }
+
+    public void deleteRows(String columnName, String matchValue) throws IOException {
+        file = new FileInputStream(this.path);
+        workbook = new XSSFWorkbook(file);
+        int sheetIndex = 0; // assume we always use the first sheet
+
+        XSSFSheet sheet = workbook.getSheetAt(sheetIndex);
+
+        int columnIndex = -1;
+        XSSFRow headerRow = sheet.getRow(0);
+        for (int i = 0; i < headerRow.getLastCellNum(); i++) {
+            XSSFCell cell = headerRow.getCell(i);
+            if (cell != null && cell.getStringCellValue().equals(columnName)) {
+                columnIndex = i;
+                break;
+            }
+        }
+
+        for (int i = sheet.getLastRowNum(); i >= 1; i--) {
+            XSSFRow row = sheet.getRow(i);
+            if (row != null) {
+                XSSFCell cell = row.getCell(columnIndex);
+                if (cell != null && cell.getStringCellValue().equals(matchValue)) {
+                    sheet.removeRow(row);
+                }
+            }
+        }
+
+        FileOutputStream outputStream = new FileOutputStream(path);
+        workbook.write(outputStream);
+        outputStream.close();
+        file.close();
+        workbook.close();
     }
 
     public Object[] getRow(String columnName, String searchValue) {
@@ -216,7 +254,17 @@ public class FileManager {
             Row newRow = sheet.createRow(sheet.getLastRowNum() + 1);
             for (int i = 0; i < rowData.length; i++) {
                 Cell newCell = newRow.createCell(i);
-                newCell.setCellValue(rowData[i]);
+                if (i == rowData.length - 1) { // check if last column
+                    try {
+                        double numericValue = Double.parseDouble(rowData[i]);
+                        newCell.setCellValue(numericValue);
+                        newCell.setCellType(CellType.NUMERIC);
+                    } catch (NumberFormatException e) {
+                        newCell.setCellValue(rowData[i]);
+                    }
+                } else {
+                    newCell.setCellValue(rowData[i]);
+                }
             }
 
             FileOutputStream outputStream = new FileOutputStream(this.path);

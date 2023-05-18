@@ -1,13 +1,12 @@
 package Project.Frames;
 
-import Project.Logic.FileManager;
-
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -15,16 +14,11 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
 
-public class AddFootballerGUI extends JFrame {
+public class PlayerManager extends JFrame {
     JLabel footballerIDLabel, footballerNameLabel, footballerSalaryLabel;
     JTextField footballerIDField, footballerNameField, footballerSalaryField;
     JButton saveFootballerButton;
     JPanel fieldPanel, buttonPanel;
-    String[] teamData, footballerData;
-    String footballerID, footballerName, footballerSalary;
-    FileManager file = new FileManager("./Project/Data.xlsx");
-
-
 
     protected JPanel buttonsPanel() {
         // Create a panel for the buttons
@@ -99,14 +93,7 @@ public class AddFootballerGUI extends JFrame {
         return fieldPanel;
     }
 
-    protected String[] footballerData() {
-        footballerID = footballerIDField.getText();
-        footballerName = footballerNameField.getText();
-        footballerSalary = footballerSalaryField.getText();
-        return new String[]{footballerID, footballerName, footballerSalary};
-    }
-
-    public AddFootballerGUI() {
+    public PlayerManager() {
         // Set up the JFrame
         setTitle("Player Manager");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

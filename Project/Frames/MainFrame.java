@@ -4,14 +4,20 @@ import Project.Logic.FileManager;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.IOException;
 import java.util.ArrayList;
+
+import static Project.Logic.FileManager.*;
 
 
 public class MainFrame extends JFrame {
     FileManager data = new FileManager("./Project/Data.xlsx");
     FileManager teamData = new FileManager("./Project/Teams.xlsx");
+    String selectedTeam, newTeamID, newTeamName, newTeamLocation;
     JPanel dataPanel, buttonBox, buttonPanel, teamPanel;
     JButton newTeam, editTeam, deleteTeam, titleButton;
     Font tableFont = new Font("San Francisco", Font.PLAIN, 20);
@@ -42,12 +48,13 @@ public class MainFrame extends JFrame {
             teamName.addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
+                    JButton clickedButton = (JButton) e.getSource();
                     if (e.getClickCount() == 1) {
-                        String teamChoice = teamName.getText();
-                        teamName.requestFocusInWindow();
-                        System.out.println(teamChoice + " selected");
+                        selectedTeam = clickedButton.getText();
+                        clickedButton.requestFocusInWindow();
+                        System.out.println(selectedTeam + " selected");
                     } else if (e.getClickCount() == 2) {
-                        String teamChoice = teamName.getText();
+                        String teamChoice = clickedButton.getText();
                         DisplayTeamsDialog displayTeamsDialog = new DisplayTeamsDialog(teamChoice);
                         displayTeamsDialog.setVisible(true);
                         System.out.println(teamChoice + " dialog opened");
@@ -68,16 +75,72 @@ public class MainFrame extends JFrame {
         newTeam.setFont(buttonFont);
         newTeam.addActionListener(e -> {
             System.out.println("New Team clicked");
-            AddTeamGUI addTeamGUI = new AddTeamGUI();
-            addTeamGUI.setVisible(true);
+            TeamManager teamManager = new TeamManager();
+            teamManager.setVisible(true);
         });
         buttonBox.add(newTeam);
 
         editTeam = new JButton("Edit Team");
         editTeam.setFont(buttonFont);
         editTeam.addActionListener(e -> {
-            System.out.println("Edit Team clicked");
-            System.out.println("Just avoiding");
+            Object[] otd = teamData.getRow("team_name", selectedTeam);
+            String[] td = teamData.teamData(parseTeamID(otd), parseTeamName(otd), parseLocation(otd));
+
+            TeamManager teamManager = new TeamManager();
+            teamManager.setTitle(selectedTeam + " Team Manager");
+            teamManager.setVisible(true);
+
+            teamManager.teamIDField.addFocusListener(new FocusListener() {
+                @Override
+                public void focusGained(FocusEvent e) {
+                    if (teamManager.teamIDField.getText().equals(td[0])) {
+                        teamManager.teamIDField.setText("");
+                    }
+                }
+                @Override
+                public void focusLost(FocusEvent e) {
+                    if (teamManager.teamIDField.getText().isEmpty()) {
+                        teamManager.teamIDField.setText(td[0]);
+                    }
+                }
+            });
+            teamManager.teamIDField.setText(td[0]);
+            teamManager.teamNameField.addFocusListener(new FocusListener() {
+                @Override
+                public void focusGained(FocusEvent e) {
+                    if (teamManager.teamNameField.getText().equals(td[1])) {
+                        teamManager.teamNameField.setText("");
+                    }
+                }
+                @Override
+                public void focusLost(FocusEvent e) {
+                    if (teamManager.teamNameField.getText().isEmpty()) {
+                        teamManager.teamNameField.setText(td[1]);
+                    }
+                }
+            });
+            teamManager.teamNameField.setText(td[1]);
+            teamManager.teamLocationField.addFocusListener(new FocusListener() {
+                @Override
+                public void focusGained(FocusEvent e) {
+                    if (teamManager.teamLocationField.getText().equals(td[2])) {
+                        teamManager.teamLocationField.setText("");
+                    }
+                }
+                @Override
+                public void focusLost(FocusEvent e) {
+                    if (teamManager.teamLocationField.getText().isEmpty()) {
+                        teamManager.teamLocationField.setText(td[2]);
+                    }
+                }
+            });
+            teamManager.teamLocationField.setText(td[2]);
+
+            newTeamID = teamManager.teamIDField.getText();
+            newTeamName = teamManager.teamNameField.getText();
+            newTeamLocation = teamManager.teamLocationField.getText();
+
+            teamManager.saveTeamButton.addActionListener(l -> dispose());
         });
         buttonBox.add(editTeam);
 
@@ -85,7 +148,13 @@ public class MainFrame extends JFrame {
         deleteTeam.setFont(buttonFont);
         deleteTeam.addActionListener(e -> {
             System.out.println("Delete Team clicked");
-            System.out.println("Just avoiding");
+            System.out.println(selectedTeam);
+            try {
+                data.deleteRows("team_name", selectedTeam);
+                teamData.deleteRows("team_name", selectedTeam);
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
         });
         buttonBox.add(deleteTeam);
 

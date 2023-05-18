@@ -2,12 +2,8 @@ package Project.Frames;
 
 import Project.Logic.FileManager;
 
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
+import javax.swing.*;
+
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -17,7 +13,7 @@ import java.awt.Insets;
 import java.awt.event.ActionEvent;
 
 
-public class AddTeamGUI extends JFrame {
+public class TeamManager extends JFrame {
     JLabel teamIDLabel, teamNameLabel, teamLocationLabel;
     JTextField teamIDField, teamNameField, teamLocationField;
     JButton addFootballerButton, saveTeamButton;
@@ -43,11 +39,11 @@ public class AddTeamGUI extends JFrame {
 
             String[] td = {teamID, teamName, teamLocation};
 
-            AddFootballerGUI addFootballerGUI = new AddFootballerGUI();
-            addFootballerGUI.setVisible(true);
+            PlayerManager playerManager = new PlayerManager();
+            playerManager.setVisible(true);
 
-            addFootballerGUI.saveFootballerButton.addActionListener((ActionEvent event) -> {
-                String[] fd = data.footballerData(addFootballerGUI.footballerIDField.getText(), addFootballerGUI.footballerNameField.getText(), addFootballerGUI.footballerSalaryField.getText());
+            playerManager.saveFootballerButton.addActionListener((ActionEvent event) -> {
+                String[] fd = data.footballerData(playerManager.footballerIDField.getText(), playerManager.footballerNameField.getText(), playerManager.footballerSalaryField.getText());
                 data.addDataRow(td, fd);
             });
         });
@@ -55,6 +51,7 @@ public class AddTeamGUI extends JFrame {
         saveTeamButton.addActionListener(e -> {
             String[] td = teamData.teamData(teamIDField.getText(), teamNameField.getText(), teamLocationField.getText());
             teamData.addRow(td);
+            dispose();
         });
 
         // Add buttons to panel
@@ -123,7 +120,7 @@ public class AddTeamGUI extends JFrame {
         return fieldsPanel;
     }
 
-    public AddTeamGUI() {
+    public TeamManager() {
         // Set up the JFrame
         setTitle("Team Manager");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
