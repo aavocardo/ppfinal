@@ -18,6 +18,8 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 
 import static Project.Logic.FileManager.*;
 
@@ -165,8 +167,56 @@ public class DisplayTeamsDialog extends JFrame {
 
         editTeam = new JButton("Edit Team");
         editTeam.addActionListener(e -> {
+            Object[] otd = teamFile.getRow("team_name", this.teamName);
+            String[] td = teamFile.teamData(parseTeamID(otd), parseTeamName(otd), parseLocation(otd));
+
             teamManager = new TeamManager();
             teamManager.setVisible(true);
+            teamManager.teamIDField.addFocusListener(new FocusListener() {
+                @Override
+                public void focusGained(FocusEvent e) {
+                    if (teamManager.teamIDField.getText().equals(td[0])) {
+                        teamManager.teamIDField.setText("");
+                    }
+                }
+                @Override
+                public void focusLost(FocusEvent e) {
+                    if (teamManager.teamIDField.getText().isEmpty()) {
+                        teamManager.teamIDField.setText(td[0]);
+                    }
+                }
+            });
+            teamManager.teamIDField.setText(td[0]);
+            teamManager.teamNameField.addFocusListener(new FocusListener() {
+                @Override
+                public void focusGained(FocusEvent e) {
+                    if (teamManager.teamNameField.getText().equals(td[1])) {
+                        teamManager.teamNameField.setText("");
+                    }
+                }
+                @Override
+                public void focusLost(FocusEvent e) {
+                    if (teamManager.teamNameField.getText().isEmpty()) {
+                        teamManager.teamNameField.setText(td[1]);
+                    }
+                }
+            });
+            teamManager.teamNameField.setText(td[1]);
+            teamManager.teamLocationField.addFocusListener(new FocusListener() {
+                @Override
+                public void focusGained(FocusEvent e) {
+                    if (teamManager.teamLocationField.getText().equals(td[2])) {
+                        teamManager.teamLocationField.setText("");
+                    }
+                }
+                @Override
+                public void focusLost(FocusEvent e) {
+                    if (teamManager.teamLocationField.getText().isEmpty()) {
+                        teamManager.teamLocationField.setText(td[2]);
+                    }
+                }
+            });
+            teamManager.teamLocationField.setText(td[2]);
         });
 
         addFootballer = new JButton("Add Footballer");
