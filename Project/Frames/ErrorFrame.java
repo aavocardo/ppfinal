@@ -8,7 +8,6 @@ public class ErrorFrame extends JFrame {
     public ErrorFrame() {
         frame = new JFrame();
 
-        // Display the error message in a JOptionPane dialog
         JOptionPane.showMessageDialog(frame, "No players in team, cannot open.", "Error", JOptionPane.ERROR_MESSAGE);
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
