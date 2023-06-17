@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8edbae0d-1630-45e6-a96b-6db7b038e4f8" name="Changes" comment="added error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Data.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Frames/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Frames/TeamManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Frames/TeamManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Teams.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Teams.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/finalProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Data.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/MainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/MainFrame$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/finalProject/Project/Frames/MainFrame.class" afterDir="false" />
     </list>
@@ -75,6 +70,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ricardo/MEU Backup/Spring 23/Programming Paradigms/finalProject&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -213,6 +209,13 @@
       <workItem from="1684403143021" duration="1478000" />
       <workItem from="1684405605154" duration="554000" />
       <workItem from="1684406386366" duration="6000" />
+      <workItem from="1684406450491" duration="49000" />
+      <workItem from="1684476802648" duration="46000" />
+      <workItem from="1684524150226" duration="214000" />
+      <workItem from="1685140818179" duration="84000" />
+      <workItem from="1686005699392" duration="72000" />
+      <workItem from="1686182343562" duration="36000" />
+      <workItem from="1686696621328" duration="130000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1683968623480</created>
@@ -354,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684404619914</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="added error">
+      <created>1684406489316</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1684406489316</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
